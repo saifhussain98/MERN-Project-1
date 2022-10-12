@@ -3,7 +3,10 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require('./models/Users');
 
+const cors = require("cors");
+
 app.use(express.json());
+app.use(cors());
 
 mongoose.connect(
     "mongodb+srv://saifh98:Emonh_123@saif.tfygyzr.mongodb.net/MERN-Project-1?retryWrites=true&w=majority"
