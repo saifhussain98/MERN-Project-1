@@ -3,6 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require('./models/Users');
 
+app.use(express.json());
+
 mongoose.connect(
     "mongodb+srv://saifh98:Emonh_123@saif.tfygyzr.mongodb.net/MERN-Project-1?retryWrites=true&w=majority"
     );
